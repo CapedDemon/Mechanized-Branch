@@ -1,5 +1,7 @@
 # **Mechanized Branch** 
 
+![](https://github.com/Shreejan-35/Mechanized-Branch/blob/main/images/automate_gif.webp)
+
 *Mechanized* literally means **automation**. And this branch which you are now observing is automated by the python script.
 This python project actually automates my workflow related to Git & Github.
 

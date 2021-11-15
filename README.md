@@ -28,7 +28,11 @@ Information of different functions :-
 - Libraries :- selenium
 
 # Installation
-You can just clone my repository using the following link nd can fill up the necessary- 
+You can just clone my repository using the following link and can fill up the necessary- 
+
+```
+https://github.com/Shreejan-35/Mechanized-Branch.git
+```
 
 # License
 **MIT**

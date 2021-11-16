@@ -19,7 +19,7 @@ class GitScraper():
     Private = ''
     add_command = "git add -A"
     commit_command = 'git commit -m "'
-    push_command = 'git push'
+    push_command = 'git push -u origin '
 
     # init function ehich takes the chromedriver.exe path
     def __init__(self, driverPath):
@@ -63,10 +63,10 @@ class GitScraper():
             self.Private.click()
     
     # This function can git add and git commit and git push make sure git is install and the configuration is global
-    def add_commit_push(self, commit_msg):
+    def add_commit_push(self, commit_msg, branch_name):
         completed1 = subprocess.Popen(["powershell.exe", self.add_command], stdout = sys.stdout)
         completed2 = subprocess.Popen(["powershell.exe", self.commit_command + commit_msg + '"'], stdout = sys.stdout)
-        completed3 = subprocess.Popen(["powershell.exe", self.push_command], stdout=sys.stdout)
+        completed3 = subprocess.Popen(["powershell.exe", self.push_command + branch_name], stdout = sys.stdout)
         
         
 # Object
@@ -76,4 +76,4 @@ bot = GitScraper(path)
 #bot.driver_init()
 #bot.login("<Your github username>", "<Your github passord>")
 #bot.new_repo("<Your Repo Name>",  "<Your Repo Description>", "<Type of project- Public or Private>")
-bot.add_commit_push("Added a function which can add and commit and push to repository.")
+bot.add_commit_push("Added a function which can add and commit and push to repository", "main")

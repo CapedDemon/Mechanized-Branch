@@ -1,4 +1,6 @@
 from selenium import webdriver
+import subprocess
+import sys
 
 path = 'D:\Chrome Driver\chromedriver.exe' # The path of chromedriver.exe(You can give your own path)
 
@@ -15,6 +17,9 @@ class GitScraper():
     Description = ''
     Public = ''
     Private = ''
+    add_command = "git add -A"
+    commit_command = 'git commit -m "'
+    push_command = 'git push'
 
     # init function ehich takes the chromedriver.exe path
     def __init__(self, driverPath):
@@ -56,11 +61,19 @@ class GitScraper():
             self.Private = self.driver.find_element_by_id(
                 "repository_visibility_private")
             self.Private.click()
+    
+    # This function can git add and git commit and git push make sure git is install and the configuration is global
+    def add_commit_push(self, commit_msg):
+        completed1 = subprocess.Popen(["powershell.exe", self.add_command], stdout = sys.stdout)
+        completed2 = subprocess.Popen(["powershell.exe", self.commit_command + commit_msg + '"'], stdout = sys.stdout)
+        completed3 = subprocess.Popen(["powershell.exe", self.push_command], stdout=sys.stdout)
         
         
 # Object
 bot = GitScraper(path)
-bot.driver_init()
-bot.login("<Your github username>", "<Your github passord>")
-bot.new_repo(
-    "<Your Repo Name>",  "<Your Repo Description>", "<Type of project- Public or Private>")
+
+# Fucntion with their specifications
+#bot.driver_init()
+#bot.login("<Your github username>", "<Your github passord>")
+#bot.new_repo("<Your Repo Name>",  "<Your Repo Description>", "<Type of project- Public or Private>")
+bot.add_commit_push("Added a function which can add and commit and push to repository.")

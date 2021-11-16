@@ -11,6 +11,7 @@ First of all this is a python script.
 It can automate my github profile and do things like:-
 - Login into my github profile
 - Creating a new repoisitory
+- Adding the file, commiting it and pushing it to repository. While doing this open your repository using the driver_init command, open the internet and wait to complete.
 
 (Many more things are going to be added to this project)
 
@@ -22,12 +23,14 @@ Information of different functions :-
 - The login function takes username and password and logins in the github profile.(**WARNING**: In my case it has not asked about the 6 digit verification code but in your case it can ask)
 - The new_repo function takes repository name, description of the repository and type of the repository and fills all the thing. You need to just click the **Create repository** button. 
 
+**This is made for windows but not fot other OS**
+
 # Tools & Configuraton
 - Language : Python(3.9.5)
 - Google Chrome - version(95.0.4638.69)
 - Chrome Driver - version(95.0.4638.69)
 - VS Code
-- Libraries :- selenium
+- Libraries :- selenium, subprocess
 
 # Installation
 You can just clone my repository using the following link and can fill up the necessary- 
@@ -35,6 +38,7 @@ You can just clone my repository using the following link and can fill up the ne
 ```
 https://github.com/Shreejan-35/Mechanized-Branch.git
 ```
+After cloning the fill the necessary and uncomment the comment.
 
 # License
 **MIT**

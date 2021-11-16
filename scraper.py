@@ -67,6 +67,7 @@ class GitScraper():
         completed1 = subprocess.Popen(["powershell.exe", self.add_command], stdout = sys.stdout)
         completed2 = subprocess.Popen(["powershell.exe", self.commit_command + commit_msg + '"'], stdout = sys.stdout)
         completed3 = subprocess.Popen(["powershell.exe", self.push_command + branch_name], stdout = sys.stdout)
+        completed4 = subprocess.Popen(["powershell.exe", "cls"], stdout=sys.stdout)
         
         
 # Object

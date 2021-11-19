@@ -30,7 +30,7 @@ Information of different functions :-
 - Google Chrome - version(95.0.4638.69)
 - Chrome Driver - version(95.0.4638.69)
 - VS Code
-- Libraries :- selenium, subprocess
+- Libraries :- selenium, subprocess, os, requests, json
 
 # Installation
 You can just clone my repository using the following link and can fill up the necessary- 

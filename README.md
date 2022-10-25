@@ -36,7 +36,7 @@ Information of different functions :-
 You can just clone my repository using the following link and can fill up the necessary- 
 
 ```
-https://github.com/Shreejan-35/Mechanized-Branch.git
+https://github.com/CapedDemon/Mechanized-Branch.git
 ```
 After cloning the fill the necessary and uncomment the comment.
 
